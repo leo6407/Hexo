@@ -21,9 +21,9 @@
 
     <meta name="description" content="20240306建立">
 <meta property="og:type" content="website">
-<meta property="og:title" content="艾瑪石頭">
+<meta property="og:title" content="宋志隆的部落格">
 <meta property="og:url" content="https://leo6407.github.io/Hexo/archives/index.html">
-<meta property="og:site_name" content="艾瑪石頭">
+<meta property="og:site_name" content="宋志隆的部落格">
 <meta property="og:description" content="20240306建立">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="SONG ZHI-LONG">
@@ -38,7 +38,7 @@
 <script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":"","permalink":"","path":"archives/index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Archive | 艾瑪石頭</title>
+<title>Archive | 宋志隆的部落格</title>
   
 
 
@@ -68,10 +68,10 @@
 
     <a href="/Hexo/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">艾瑪石頭</h1>
+      <h1 class="site-title">宋志隆的部落格</h1>
       <i class="logo-line"></i>
     </a>
-      <p class="site-subtitle" itemprop="description">宋志隆的部落格</p>
+      <p class="site-subtitle" itemprop="description">艾瑪石頭</p>
   </div>
 
   <div class="site-nav-right">
@@ -161,7 +161,30 @@
       </div>
   </nav>
 </div>
-
+{# Blogroll #}
+{% if theme.recent_posts %}
+<div class="links-of-blogroll motion-element {{ "links-of-blogroll-" + theme.recent_posts_layout  }}">
+<br>
+<div class="links-of-blogroll-title">
+    <!-- 設定你要的fa fa icon-->
+    <i class="fa fa-history fa-{{ theme.recent_posts_icon | lower }}" aria-hidden="true"></i>
+    {{ theme.recent_posts_title }}
+</div>
+<ul class="links-of-blogroll-list">
+    <!--{% set posts = site.posts.sort('-date') %}-->
+    {% set posts = site.posts.sort('-date').toArray() %}
+    {% for post in posts.slice('0', '5') %}
+    <li class='pull-left' style="white-space:normal; text-align:left" >
+      <time title="{{ __('post.created') }}" itemprop="dateCreated datePublished" datetime="{{ moment(post.date).format() }}">
+        {{ date(post.date, 'MM/DD') }}
+      </time>
+      <a href="{{ url_for(post.path) }}" title="{{ post.title }}">{{ post.title }}</a>
+      <br>
+    </li>
+    {% endfor %}
+</ul>
+</div>
+{% endif %}
         </div>
       </div>
     </div>
