@@ -21,18 +21,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>JAVA</title>
-    <url>/Hexo/2024/03/08/Javaweb/</url>
-    <content><![CDATA[<p>java web</p>
-]]></content>
-      <categories>
-        <category>Tech</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo 搭配 GitHub Pages</title>
     <url>/Hexo/2024/03/08/%E6%88%91%E7%9A%84HEXO%E7%B6%B2%E9%A0%81/</url>
     <content><![CDATA[<p>我用MAC筆電沒什麼大問題<br>安裝了一些使用Hexo前必須要裝的程式</p>
@@ -55,6 +43,18 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JAVA</title>
+    <url>/Hexo/2024/03/08/Javaweb/</url>
+    <content><![CDATA[<p>java web</p>
+]]></content>
+      <categories>
+        <category>Tech</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
 </search>

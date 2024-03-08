@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://leo6407.github.io/Hexo/about/index.html</loc>
-    
-    <lastmod>2024-03-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://leo6407.github.io/Hexo/archives/index.html</loc>
     
     <lastmod>2024-03-08</lastmod>
@@ -74,14 +65,14 @@
 
   
   <url>
-    <loc>https://leo6407.github.io/Hexo/tags/Java/</loc>
+    <loc>https://leo6407.github.io/Hexo/tags/Hexo/</loc>
     <lastmod>2024-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://leo6407.github.io/Hexo/tags/Hexo/</loc>
+    <loc>https://leo6407.github.io/Hexo/tags/Java/</loc>
     <lastmod>2024-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
